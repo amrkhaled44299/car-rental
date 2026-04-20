@@ -1,0 +1,16 @@
+.app-layout { display: flex; flex-direction: column; min-height: 100vh; }
+.navbar { height: 60px; display: flex; align-items: center; padding: 0 2rem; gap: 2rem; background: rgba(13,15,20,0.85); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; }
+.navbar-brand { display: flex; align-items: center; gap: 0.5rem; flex-shrink: 0; }
+.brand-icon { color: var(--accent); font-size: 1.1rem; }
+.brand-text { font-family: var(--font-display); font-size: 1.15rem; font-weight: 800; letter-spacing: -0.03em; }
+.navbar-links { display: flex; align-items: center; gap: 0.25rem; flex: 1; }
+.nav-link { padding: 0.4rem 0.85rem; border-radius: var(--radius-md); font-size: 0.875rem; font-weight: 500; color: var(--text-secondary); transition: all var(--transition); }
+.nav-link:hover { color: var(--text-primary); background: rgba(255,255,255,0.04); }
+.nav-link.active { color: var(--accent); background: var(--accent-dim); }
+.navbar-end { display: flex; align-items: center; gap: 1rem; flex-shrink: 0; }
+.user-menu { display: flex; align-items: center; gap: 0.75rem; }
+.user-avatar { width: 32px; height: 32px; border-radius: 50%; background: var(--accent-dim); border: 1px solid var(--accent); color: var(--accent); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-weight: 700; font-size: 0.8rem; flex-shrink: 0; }
+.user-info { display: flex; flex-direction: column; gap: 0.1rem; }
+.user-name { font-size: 0.825rem; font-weight: 500; line-height: 1; max-width: 120px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.main-content { flex: 1; }
+@media(max-width:768px){ .navbar{ padding:0 1rem; gap:1rem; } .navbar-links{ display:none; } .user-info{ display:none; } }
